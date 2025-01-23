@@ -1,0 +1,192 @@
+The data come from the Quality of Government Institute at the University of Gothenburg: https://www.gu.se/en/quality-government
+
+Most of the data come from the Environmental Indicators Dataset: https://www.gu.se/en/quality-government/qog-data/data-downloads/environmental-indicators-dataset
+
+The variables br_elect and ht_region come from the Standard Dataset: https://www.gu.se/en/quality-government/qog-data/data-downloads/standard-dataset
+
+The datasets were downloaded in January 2025.
+
+data.csv and data_2015.csv come from the Quality of Government Institute's datasets and are produced with exploring_and_selecting_data.R
+
+data.csv has 13 variables between 1990 and 2020 (with missing values)
+
+data_2015.csv has 13 variables for 2015 (with missing values)
+
+You can find the variables below, including their definition in the codebooks of the Quality of Government Institute and their original source.
+
+------------------------------------
+
+cname_qog
+
+Name of the country in English with a distinction of countries that have experienced merges or
+splits.
+
+------------------------------------
+
+year
+
+Year
+
+------------------------------------
+
+br_elect
+
+Alternative democracy indicator capturing degree of multi-party competition. (0: No elections; 1:
+Single-party elections; 2: Non-democratic multi-party elections; 3: Democratic elections).
+
+From: Bjørnskov, C., & Rode, M. (2020). Regime types and regime change: A new dataset on democracy,
+coups, and political institutions. Review of International Organizations, 15 (2), 531–551
+
+------------------------------------
+
+ht_region
+
+This is a tenfold politico-geographic classification of world regions, based on a mixture of two considerations:
+geographical proximity (with the partial exception of category 5 below) and demarcation
+by area specialists having contributed to a regional understanding of democratization. The categories
+are as follow:
+1. Eastern Europe and post Soviet Union (including Central Asia)
+2. Latin America (including Cuba, Haiti & the Dominican Republic)
+3. North Africa & the Middle East (including Israel, Turkey & Cyprus)
+4. Sub-Saharan Africa
+5. Western Europe and North America (including Australia & New Zealand)
+6. East Asia (including Japan & Mongolia)
+7. South-East Asia
+8. South Asia
+9. The Pacific (excluding Australia & New Zealand)
+10. The Caribbean (including Belize, Guyana & Suriname, but excluding Cuba, Haiti & the Dominican
+Republic)
+
+From:
+
+Wahman, M., Teorell, J., & Hadenius, A. (2013). Authoritarian regime types revisited: Updated
+data in comparative perspective. Contemporary Politics, 19 (1), 19–34. 
+
+Hadenius, A., & Teorell, J. (2007). Pathways from authoritarianism. Journal of Democracy,
+18 (1), 143–157
+
+Teorell, J., & Wahman, M. (2018). Institutional stepping stones for democracy: How and why
+multipartyism enhances democratic change. Democratization, 25 (1), 78–97
+
+------------------------------------
+
+act_act
+
+A binary measure of whether a country has an accountable climate target (ACT) or not. An
+ACT is a precise emissions target for which other countries can hold a country - and only that
+country - accountable. A country has an ACT if it fulfills two criteria: 1) the country’s nationally
+determined contribution (NDC) must state an economy-wide target in reference to emission levels
+from a past year, a target compared to the business-as-usual scenario, or a target in terms of
+the CO2 emissions per unit of gross domestic product (GDP); 2) the commitment must not be
+conditional upon receiving financial support from third parties. The measure is for 2015, at the
+time of the first NDCs.
+
+From: Boräng, Frida et al. 2019. “Committing to the climate: a global study of accountable climate
+targets”. Sustainability. 11. 7
+
+------------------------------------
+
+cckp_rain
+
+Annual average rainfall in millimeters.
+
+From:
+
+TheWorld Bank Group. 2021. Climate Change Knowledge Portal. url: https://climateknowledgeportal.
+worldbank.org
+
+Harris, Ian et al. 2020. “Version 4 of the CRU TS monthly high-resolution gridded multivariate
+climate dataset”. Scientific Data. 7. 1. url: https://doi.org/10.1038/s41597-020-
+0453-3
+
+------------------------------------
+
+cckp_temp
+
+Annual average temperature in Celsius.
+
+From:
+
+TheWorld Bank Group. 2021. Climate Change Knowledge Portal. url: https://climateknowledgeportal.
+worldbank.org
+
+Harris, Ian et al. 2020. “Version 4 of the CRU TS monthly high-resolution gridded multivariate
+climate dataset”. Scientific Data. 7. 1. url: https://doi.org/10.1038/s41597-020-
+0453-3
+
+------------------------------------
+
+wdi_co2
+
+Carbon dioxide (CO2) emissions stem from the burning of fossil fuels and the manufacture of
+cement. They include carbon dioxide produced during consumption of solid, liquid, and gas fuels
+and gas flaring.
+
+From: World Bank. 2020. World Development Indicators
+
+------------------------------------
+
+fao_luagr
+
+Agricultural land as a share of total land area.
+
+From: Food and Agricultural Organization of the United Nations. 2020. Global Forest Resources
+Assessments. url: http://www.fao.org/forest-resources-assessment/en/
+
+------------------------------------
+
+fao_luforest
+
+Forest land as a share of total land area.
+
+From: Food and Agricultural Organization of the United Nations. 2020. Global Forest Resources
+Assessments. url: http://www.fao.org/forest-resources-assessment/en/
+
+------------------------------------
+
+epi_cda
+
+The CO2 (carbon dioxide) growth rate, which makes up 55% of the Climate Change Issue Category,
+is calculated as the average annual rate of increase or decrease in raw carbon dioxide emissions over
+the years 2008-2017. It is then adjusted for economic trends to isolate change due to policy rather
+than economic fluctuation.
+
+From:
+
+Wendling, Z.A. et al. 2020. “2020 Environmental Performance Index”. New Haven, CT: Yale
+Center for Environmental Law and Policy. url: https://epi.envirocenter.yale.edu/ 
+
+Original source: Potsdam Institute for Climate Impact Research.
+When using this variable, please cite both EPI and the original source.
+
+------------------------------------
+
+epi_msw
+
+Controlled solid waste refers to the proportion of household and commercial waste generated in
+a country that is collected and treated in a manner that controls environmental risks. This metric
+counts waste as controlled if it is treated through recycling, composting, anaerobic digestion,
+incineration, or disposed of in a sanitary landfill.
+
+From:
+
+Wendling, Z.A. et al. 2020. “2020 Environmental Performance Index”. New Haven, CT: Yale
+Center for Environmental Law and Policy. url: https://epi.envirocenter.yale.edu/ 
+
+Original source: Wiedinmyer et al. 2014 & Kaza et al. 2018.
+When using this variable, please cite both EPI and the original source.
+------------------------------------
+
+epi_uwd
+
+EPI measures unsafe drinking water using the number of age-standardized disability-adjusted lifeyears
+lost per 100,000 persons (DALY rate) due to exposure to unsafe drinking water. The variable
+is log-transformed.
+
+From:
+
+Wendling, Z.A. et al. 2020. “2020 Environmental Performance Index”. New Haven, CT: Yale
+Center for Environmental Law and Policy. url: https://epi.envirocenter.yale.edu/ 
+
+Original source: Institute for Health Metrics and Evaluation.
+When using this variable, please cite both EPI and the original source.
